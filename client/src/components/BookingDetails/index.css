@@ -13,6 +13,7 @@
     min-height: 250px;
     max-height: 350px;
     padding: 10px;
+    padding-top: 0px;
     margin-right: 15px;
     margin-left: 15px;
     display: flex;
@@ -48,6 +49,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 25px;
   }
   .payment-text {
     margin: 0px 8px;
@@ -69,7 +71,9 @@
   .booking-done {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
+    padding-top: 30px;
   }
   .booking-done-cont {
     height: 140px;
@@ -91,7 +95,7 @@
     font-size: 15px;
   }
   .user-booking-details {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .user-booking-details p {
     margin-top: 1px;
@@ -121,6 +125,21 @@
     margin-top: 3px;
     font-size: 11px;
   }
+  .home-btn {
+    background-color: rgba(13, 101, 133, 0.861);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 5px;
+    height: 30px;
+  }
+  .return-btn {
+    background-color: rgba(13, 101, 133, 0.861);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    height: 30px;
+  }
 }
 
 @media screen and (min-width: 578px) and (max-width: 992px) {
@@ -143,6 +162,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 0px;
   }
   .name-mail-number {
     min-width: 45%;
@@ -176,6 +196,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 25px;
   }
   .payment-text {
     margin: 0px 8px;
@@ -197,10 +218,12 @@
   .booking-done {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-around;
     padding-left: 50px;
     padding-right: 50px;
     width: 90%;
+    padding-top: 30px;
   }
   .booking-done-cont {
     height: 140px;
@@ -222,7 +245,7 @@
     font-size: 15px;
   }
   .user-booking-details {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .user-booking-details p {
     margin-top: 1px;
@@ -254,6 +277,21 @@
     color: red;
     margin-top: 3px;
   }
+  .home-btn {
+    background-color: rgba(13, 101, 133, 0.861);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 5px;
+    height: 30px;
+  }
+  .return-btn {
+    background-color: rgba(13, 101, 133, 0.861);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    height: 30px;
+  }
 }
 
 @media (min-width: 993px) {
@@ -273,6 +311,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 0px;
   }
   .name-mail-number {
     min-width: 40%;
@@ -305,6 +344,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 25px;
   }
   .payment-text {
     margin: 0px 8px;
@@ -324,6 +364,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
   }
   .booking-done-cont {
     display: flex;
@@ -343,7 +385,7 @@
     margin-bottom: 1px;
   }
   .user-booking-details {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .user-booking-details p {
     margin-top: 1px;
@@ -367,5 +409,20 @@
   .error-msg {
     color: red;
     margin-top: 3px;
+  }
+  .home-btn {
+    background-color: rgba(13, 101, 133, 0.861);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 5px;
+    height: 30px;
+  }
+  .return-btn {
+    background-color: rgba(13, 101, 133, 0.861);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    height: 30px;
   }
 }
