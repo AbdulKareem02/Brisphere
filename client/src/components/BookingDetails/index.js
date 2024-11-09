@@ -169,6 +169,11 @@ const BookingDetails = () => {
     }
   };
 
+  //on clicking return booking button
+  const onClickReturnBooking = () => {
+    setPlaceOrder(false);
+  };
+
   //rendering Booking form
   const renderRoomBookingForm = () => {
     return (
@@ -367,7 +372,9 @@ const BookingDetails = () => {
             <button className="home-btn">Home</button>
           </Link>
           <Link to="/booking">
-            <button className="return-btn">Return to Booking</button>
+            <button className="return-btn" onClick={onClickReturnBooking}>
+              Return to Booking
+            </button>
           </Link>
         </div>
       </>
