@@ -305,14 +305,6 @@ const BookingDetails = () => {
               <h3>Order Complete</h3>
               <p>Have questions?</p>
               <p className="read-more">contact us</p>
-              <div>
-                <Link to="/">
-                  <button className="home-btn">Home</button>
-                </Link>
-                <Link to="/booking">
-                  <button className="return-btn">Return to Booking</button>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -368,6 +360,15 @@ const BookingDetails = () => {
               </button>
             </Link>
           </div>
+        </div>
+
+        <div className="return-home-btn-cont">
+          <Link to="/">
+            <button className="home-btn">Home</button>
+          </Link>
+          <Link to="/booking">
+            <button className="return-btn">Return to Booking</button>
+          </Link>
         </div>
       </>
     );

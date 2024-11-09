@@ -284,6 +284,7 @@
     color: #fff;
     margin-right: 5px;
     height: 30px;
+    cursor: pointer;
   }
   .return-btn {
     background-color: rgba(13, 101, 133, 0.861);
@@ -291,6 +292,10 @@
     border-radius: 4px;
     color: #fff;
     height: 30px;
+    cursor: pointer;
+  }
+  .return-home-btn-cont {
+    margin-top: 25px;
   }
 }
 
@@ -417,6 +422,7 @@
     color: #fff;
     margin-right: 5px;
     height: 30px;
+    cursor: pointer;
   }
   .return-btn {
     background-color: rgba(13, 101, 133, 0.861);
@@ -424,5 +430,6 @@
     border-radius: 4px;
     color: #fff;
     height: 30px;
+    cursor: pointer;
   }
 }
