@@ -9,6 +9,7 @@ git clone origin https://github.com/AbdulKareem02/Brisphere.git
 ### This will create a local copy of your Brisphere-Assignment project on your computer. Once cloned, navigate to the project directory:
 
 cd Brisphere
+cd client
 
 install require dependencies : npm install
 start/view the project with command : npm start
