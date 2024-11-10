@@ -7,6 +7,7 @@ const ContextProvider = ({ children }) => {
     checkIn: new Date(),
     checkOut: new Date(),
     roomsCount: 1,
+    isOrderPlaced: false,
   });
   return (
     <AppContext.Provider value={{ state, setState }}>

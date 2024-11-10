@@ -22,8 +22,9 @@ const apiStatus = [
 
 const BookingDetails = () => {
   const { state, setState } = useContext(AppContext);
-  const { checkIn, checkOut, roomsCount } = state;
-  const [isOrderPlaced, setPlaceOrder] = useState(false);
+  const { checkIn, checkOut, roomsCount, isOrderPlaced } = state;
+  console.log(isOrderPlaced);
+  // const [isOrderPlaced, setPlaceOrder] = useState(false);
   const [userData, setUserData] = useState({
     name: "",
     mail: "",
@@ -155,7 +156,10 @@ const BookingDetails = () => {
 
     if ([name, mail, phoneNo, adult, child].every((value) => value !== "")) {
       // setUserData({ name, mail, phoneNo, adult, child });
-      setPlaceOrder(true); // order confirm
+      setState((state) => ({
+        ...state,
+        isOrderPlaced: true,
+      })); // order confirm
       const data = {
         name: name,
         mail: mail,
@@ -164,6 +168,7 @@ const BookingDetails = () => {
         child: child,
       }; // creating a object to send data to backend
       storeDataInDatabase(data);
+      setErrorMsg(false); // updating no error
     } else {
       setErrorMsg(true);
     }
@@ -171,7 +176,11 @@ const BookingDetails = () => {
 
   //on clicking return booking button
   const onClickReturnBooking = () => {
-    setPlaceOrder(false);
+    setState((state) => ({
+      ...state,
+      isOrderPlaced: false,
+    }));
+    setErrorMsg(false);
   };
 
   //rendering Booking form
@@ -283,6 +292,7 @@ const BookingDetails = () => {
                 </span>
               </button>
             </Link>
+            <p className="click-to-pay-text">Click to pay token amount</p>
           </div>
         </div>
       </>
@@ -368,7 +378,7 @@ const BookingDetails = () => {
         </div>
 
         <div className="return-home-btn-cont">
-          <Link to="/">
+          <Link to="/" onClick={onClickReturnBooking}>
             <button className="home-btn">Home</button>
           </Link>
           <Link to="/booking">

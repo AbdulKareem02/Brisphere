@@ -140,6 +140,11 @@
     color: #fff;
     height: 30px;
   }
+  .click-to-pay-text {
+    font-size: 10px;
+    margin-left: 25px;
+    font-weight: 600;
+  }
 }
 
 @media screen and (min-width: 578px) and (max-width: 992px) {
@@ -297,6 +302,11 @@
   .return-home-btn-cont {
     margin-top: 25px;
   }
+  .click-to-pay-text {
+    font-size: 11px;
+    margin-left: 25px;
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 993px) {
@@ -431,5 +441,10 @@
     color: #fff;
     height: 30px;
     cursor: pointer;
+  }
+  .click-to-pay-text {
+    font-size: 11px;
+    margin-left: 25px;
+    font-weight: 600;
   }
 }
